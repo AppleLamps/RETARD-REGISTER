@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETARD REGISTER - Live Database</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📋</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>RETARD REGISTER</h1>
+            <p>Live Database - Real-time Registry with Advanced Search</p>
+        </div>
+    </header>
+
+    <!-- Search and Filter Section -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-controls">
+                <input 
+                    type="text" 
+                    id="search-input" 
+                    class="search-input" 
+                    placeholder="Search by name, X account, offense, or level..."
+                    autocomplete="off"
+                >
+                <select id="level-filter" class="filter-select" aria-label="Filter by level">
+                    <option value="all">All Levels</option>
+                </select>
+                <button id="clear-btn" class="clear-btn">Clear Filters</button>
+            </div>
+            <div id="stats" class="stats">Loading...</div>
+        </div>
+    </section>
+
+    <!-- Loading Indicator -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        Loading registry data...
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div id="entries-grid" class="entries-grid">
+            <!-- Entries will be populated by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 2rem; color: rgba(255,255,255,0.8); font-size: 0.9rem;">
+        <p>Press <kbd>Ctrl+F</kbd> to focus search • Data updates automatically</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
