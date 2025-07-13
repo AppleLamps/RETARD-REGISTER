@@ -45,6 +45,24 @@ body {
     font-size: 1.1rem;
 }
 
+.credits {
+    font-size: 0.9rem !important;
+    margin-top: 1rem;
+    color: #95a5a6 !important;
+}
+
+.credits a {
+    color: #1da1f2;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.credits a:hover {
+    color: #0d8bd9;
+    text-decoration: underline;
+}
+
 /* Search and filters */
 .search-section {
     background: rgba(255, 255, 255, 0.9);
